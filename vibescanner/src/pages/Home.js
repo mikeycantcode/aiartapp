@@ -1,7 +1,10 @@
 import React from 'react';
-const home = () => {
+const Home = () => {
+    //filler text rn
     return (
-        <div>
+
+
+        <div class="text-stone-300">
             <h3>welcome to vibegraph.</h3>
             <p>
                 ever want to see the vibes of your feed?
@@ -12,4 +15,4 @@ const home = () => {
         </div>
     );
 }
-export default home;
+export default Home;
