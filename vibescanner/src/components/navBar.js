@@ -2,25 +2,22 @@ import React from 'react';
 import { Link } from "react-router-dom";
 const navbar = () => {
     return (
-        <nav class=" bg-slate-800 shadow-lg rounded-xl">
+        <nav class=" bg-slate-100 shadow-lg rounded-xl">
             <div class="max-w-6xl mx-auto px-4">
-                <div class="flex justify-end">
+                <div class="flex justify-center">
                     <div class="flex space-x-7">
                         <div>
-                            <a class="flex items-center py-4 px-2">
-                                <span class="text-stone-300 text-lg font-bold">vibegraph.app</span>
+                            <a class="flex items-left py-4 px-2">
+                                <span class="text-slate-800 text-lg font-bold">aiartist.app</span>
                             </a>
                         </div>
                         <div class="hidden md:flex items-center space-x-1">
-                            <a class="px-10 text-stone-400">
+                            <li class="px-10 text-slate-800">
                                 <Link to="/">home</Link>
-                            </a>
-                            <a class="px-10 text-stone-400">
-                                <Link to="/myVibeGraph">my vibegraph</Link>
-                            </a>
-                            <a class="px-10 text-stone-400">
+                            </li>
+                            <li class="px-10 text-slate-800">
                                 <Link to="/about">about</Link>
-                            </a>
+                            </li>
                             <a class=" text-slate-900 rounded-lg
             bg-stone-400
             hover:bg-stone-300
@@ -30,7 +27,7 @@ const navbar = () => {
             text-sm
             w-70
             login-button">
-                                <Link to="/loginPage">log in with tiktok</Link>
+                                <Link to="/loginPage">Log in with google</Link>
                             </a>
                         </div>
                     </div>
@@ -44,3 +41,5 @@ const navbar = () => {
     );
 }
 export default navbar;
+
+

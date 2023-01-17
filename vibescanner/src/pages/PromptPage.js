@@ -1,8 +1,10 @@
 import React from 'react';
 import { useState } from 'react'
+import { NameForm } from '../components/FUCKEDtextInput'
+import { NewTextInput } from '../components/newTextInput'
 import { Link } from 'react-router-dom';
 import { Display } from '../components/Vibechart';
-const MyVibeGraph = () => {
+const PromptPage = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     //filler text rn
     return (
@@ -56,25 +58,12 @@ const MyVibeGraph = () => {
                     </nav>
                 </div>
             </div>
-            <div class="flex-1 px-3">
-                <figure class="max-w-lg">
-                    <img class="h-auto max-w-full rounded-lg" src="https://www.pngkit.com/png/full/768-7681693_shrub-transparent-image-juniper-shrub-png.png" alt="image description"></img>
-                    <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">A shrub</figcaption>
-                </figure>
-                <figure class="max-w-lg">
-                    <img class="h-auto max-w-full rounded-lg" src="https://preview.redd.it/mtob2p1hkgba1.png?width=960&crop=smart&auto=webp&v=enabled&s=1e785c31258efb19c8bc26109ca209608e018ef4" alt="image description"></img>
-                    <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Prompt: Joe Biden as a holy warrior</figcaption>
-                </figure>
-                <figure class="max-w-lg">
-                    <img class="h-auto max-w-full rounded-lg" src="https://i.redd.it/fktdcku30gba1.png" alt="image description"></img>
-                    <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Prompt: Joe Biden as a holy warrior</figcaption>
-                </figure>
-                <figure class="max-w-lg">
-                    <img class="h-auto max-w-full rounded-lg" src="https://i.redd.it/fktdcku30gba1.png" alt="image description"></img>
-                    <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Prompt: Joe Biden as a holy warrior</figcaption>
-                </figure>
+            <div class="">
+                <NewTextInput >
+
+                </NewTextInput>
             </div>
         </div>
     );
 }
-export default MyVibeGraph;
+export default PromptPage;

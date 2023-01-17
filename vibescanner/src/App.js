@@ -12,6 +12,7 @@ import MyVibeGraph from './pages/MyVibeGraph'
 //login Page (may not use)
 import LoginPage from './pages/LoginPage'
 //login component
+import PromptPage from './pages/PromptPage';
 
 
 function App() {
@@ -23,9 +24,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/myVibeGraph' element={<MyVibeGraph />} />
+        <Route path='/react' element={<MyVibeGraph />} />
         <Route path='/about' element={<About />} />
         <Route path='/loginPage' element={<LoginPage />} />
+        <Route path='/create' element={<PromptPage />} />
       </Routes>
     </Router>
   );
