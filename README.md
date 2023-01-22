@@ -1,2 +1,2 @@
-# tiktokVibeScanner
-in progress web app that uses TikTok data to find which circles you are in
+#ai art generator
+in progress webapp that allows you to generate art
